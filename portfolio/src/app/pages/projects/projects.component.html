@@ -1,12 +1,31 @@
 <div>
     <h1>Projetos</h1>
-
     <div class="main_container">
 
-        <h2>
-            Em Breve . . .
-        </h2>
+        <div class="cards_list">
+
+            <div class="repository_cards" *ngFor="let project of mainProjects">
+
+                <div class="project_name_container">
+                    <a href='{{ project.html_url }}' target="_blank" rel="noopener noreferrer">
+                        <img class="directory_icon" src="{{ iconURL }}" alt="repository icon">
+                        <p class="project_name">
+                            {{ project.name }}
+                        </p>
+                    </a>
+                </div>
+
+                <p class="repo_description">
+                    {{ project.description }}
+                </p>
+
+                <p class="repo_main_language" *ngIf="project.language != null">
+                    {{ project.language }}
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
-
 </div>

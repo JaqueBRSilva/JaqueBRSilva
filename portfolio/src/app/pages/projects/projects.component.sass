@@ -1,0 +1,59 @@
+@import ../../../styles
+
+.cards_list
+    place-self: center
+
+.repository_cards
+    display: grid
+    padding: 2rem
+    border: 2px solid $secondary
+    border-radius: 2rem
+    margin-bottom: 1.4rem
+    max-width: 22rem
+
+.project_name_container
+    a
+        display: flex
+        gap: 0.3rem
+        align-items: center
+
+.project_name
+    color: $secondary
+    font-weight: bold
+
+.directory_icon
+    height: 2.5rem
+
+.repo_description
+    color: $text
+    padding: 1rem 0
+
+.repo_main_language
+    background: $primary
+    color: $background
+    font-weight: bold
+    padding: 0.4rem
+    font-size: 0.9rem
+    text-align: center
+    border-radius: 2rem
+    max-width: 25rem
+
+    p
+        text-align: center
+        place-content: center
+
+
+@media screen and (min-width: 992px)
+    .cards_list
+        display: inline-flex
+        place-content: center
+        flex-wrap: wrap
+        gap: 1rem
+
+    .repository_cards
+        width: 18rem
+        align-items: center
+        flex-wrap: wrap
+
+
+// @media screen and (min-width: 1200px)
