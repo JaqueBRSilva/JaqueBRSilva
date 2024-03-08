@@ -1,0 +1,52 @@
+@import ../../global
+
+
+.background_layer
+    background-image: url('https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg')
+    background-repeat: no-repeat
+    background-position: top
+    background-attachment: fixed
+    background-size: cover
+
+.container_profile
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100vh
+    padding: 1.5rem
+    backdrop-filter: brightness(35%)
+    -webkit-backdrop-filter: brightness(35%)
+
+.photo_area
+    display: flex
+    padding-bottom: 5rem
+    justify-content: center
+    padding-top: 3rem
+
+
+.github_photo
+    height: 20vh
+    border-radius: 50%
+
+.profile_area
+    text-align: center
+
+    h1
+        font-size: 2.2rem
+        color: $text
+        padding: 2rem 0
+
+    h2
+        font-size: 1.6rem
+        color: $secondary
+        padding: 2rem 0
+
+@media screen and (min-width: 992px)
+    .container_profile
+        flex-direction: row
+        align-items: center
+        gap: 7rem
+        flex-flow: wrap
+
+    .github_photo
+        height: 35vh
