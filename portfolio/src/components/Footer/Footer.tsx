@@ -28,6 +28,16 @@ export default function Footer() {
                         </a>
                     </p>
                 </div>
+
+                <div className='footer-column-1'>
+                    <h3>Contato</h3>
+
+                    <p className="footer-links">
+                        <a href="mailto:j.silvabroccolo@gmail.com" target="_blank" rel="noopener noreferrer">
+                            E-mail
+                        </a>
+                    </p>
+                </div>
             </div>
 
             <div className="footer-credits-container">
