@@ -1,33 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.sass'
+import About from './app/about/about'
+import FeaturedProjects from './app/featured-projects/featured-projects'
+import LanguagesList from './app/languages-list/languages-list'
+import Presentation from './app/presentation/presentation'
+import Footer from './components/Footer/Footer'
+import Menu from './components/Menu/Menu'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Menu />
+
+      <>
+        <div id="top-button">
+        </div>
+
+        <section className="" id='presentation'>
+          <Presentation />
+        </section>
+
+        <section className="section-area" id="about">
+          <About />
+        </section>
+
+        <section className="section-area" id='languages-list'>
+          <LanguagesList />
+        </section>
+
+        <section className="section-area" id='projects'>
+          <FeaturedProjects />
+        </section>
+      </>
+
+      <Footer />
     </>
   )
 }
