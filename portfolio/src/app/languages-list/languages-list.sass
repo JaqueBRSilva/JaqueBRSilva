@@ -1,0 +1,41 @@
+@import ../../constants/Colors
+
+
+.languages_list
+    display: flex
+    flex-wrap: wrap
+    place-content: center
+    gap: 1rem
+
+.language_name
+    display: flex
+    flex-direction: row
+    color: $text
+    place-items: center
+    gap: 5px
+    padding-bottom: 1rem
+
+.lang_icons
+    width: 3rem
+
+
+@media screen and (min-width: 576px)
+    .languages_list
+        display: flex
+        flex-direction: row
+
+
+@media screen and (min-width: 992px)
+    .languages_list
+        place-content: center
+        flex-wrap: wrap
+        gap: 1.5rem
+        padding-top: 5rem
+    
+    .language_name
+        display: grid
+        gap: 0.7rem
+        text-align: center
+
+    .lang_icons
+        place-self: center

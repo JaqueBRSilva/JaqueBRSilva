@@ -1,0 +1,44 @@
+@import ./../../constants/Colors
+
+.footer-content
+    background: $medium_black
+    display: grid
+    padding: 2rem
+    border-top-left-radius: 1.5rem
+    border-top-right-radius: 1.5rem
+
+.footer-columns-container
+    gap: 2.5rem
+    justify-content: center
+
+.footer-column-1
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding-bottom: 3rem
+
+.footer-links
+    padding: 0.2rem
+
+.footer-credits-container
+    display: grid
+    place-content: center
+    gap: 1rem
+    margin-bottom: 2rem  
+
+.footer-credits-text
+    font-size: 1.1rem
+    text-align: center
+
+#react
+    color: $secondary
+
+#sass
+    color: $primary
+
+
+@media screen and (min-width: 576px)
+    .footer-columns-container
+        display: flex
+        align-items: flex-start 

@@ -1,0 +1,46 @@
+@import ./constants/Colors
+
+:root
+   background: $bg_dark_medium
+   font-family: 'Raleway', sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
+   font-size: 1.1rem
+   box-sizing: border-box
+   color: $text
+   color-scheme: light dark
+   font-synthesis: none
+   text-rendering: optimizeLegibility
+   -webkit-font-smoothing: antialiased
+   -moz-osx-font-smoothing: grayscale
+
+*
+   margin: 0
+   padding: 0
+
+a
+   text-decoration: none
+   color: $text
+
+   &:hover
+      color: $secondary
+
+h1
+   padding: 4rem 0
+   font-size: 2rem
+   color: $primary
+   text-transform: uppercase
+
+h2
+   color: $secondary
+   padding-bottom: 0.5rem
+
+h3
+   color: $text
+   padding: 0.7rem 0
+
+h4
+   color: $primary
+
+.main_container
+   display: flex
+   flex-direction: column
+   justify-content: center
