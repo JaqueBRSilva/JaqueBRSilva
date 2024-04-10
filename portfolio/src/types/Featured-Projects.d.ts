@@ -6,5 +6,5 @@ export interface IFeaturedProjectsData {
     url_demo_link: string,
     url_github_link: string,
     description: string,
-    used_languages: Array<string>       
+    used_languages: Array<string>
 }

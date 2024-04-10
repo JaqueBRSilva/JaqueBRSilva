@@ -39,6 +39,9 @@ export default function FeaturedProjects() {
                                         />
                                     </div>
                                 </a>
+                                <p className='featured-project-type'>
+                                    {proj.project_type}
+                                </p>
                             </div>
 
                             <p className="featured-repo-description">
