@@ -1,0 +1,105 @@
+@import ../../constants/Colors
+
+.featured-repository-cards
+    display: grid
+    padding: 1rem
+    border: 2px solid $secondary
+    border-radius: 1rem
+    margin-bottom: 1.4rem
+    width: 80vw
+    max-width: 100%
+
+.featured-preview-image
+    width: 100%
+    height: 10rem
+    border-radius: 0.5rem
+    margin-bottom: 0.5rem
+    object-fit: contain
+
+.featured-project-name-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.featured-project-name
+    color: $secondary
+    font-size: 1.2rem
+    font-weight: bold
+
+.featured-icons-container
+    display: flex
+    gap: 0.2rem
+
+.open-in-new-window-icon
+    display: flex
+    width: 2.1rem
+
+    &:hover
+        border-radius: 25%
+        background: $text
+
+.featured-github-logo
+    display: flex
+    width: 2.1rem
+
+    &:hover
+        border-radius: 50%
+        background: $text
+
+.featured-project-type
+    font-size: 0.99rem
+    font-weight: bold
+    color: $primary
+
+.featured-repo-description
+    color: $text
+    text-align: justify
+    padding: 1rem 0
+
+.featured-repo-main-languages-container
+    display: grid
+    gap: 0.4rem
+
+.featured-repo-main-languages
+    background: $primary
+    color: $bg_dark_medium
+    font-weight: bold
+    padding: 0.4rem
+    font-size: 0.9rem
+    text-align: center
+    border-radius: 2rem
+    align-content: center
+
+
+@media screen and (min-width: 576px)
+    .featured-repository-cards
+        min-width: 30rem
+    
+    .featured-preview-image
+        width: 100%
+        min-height: 21rem
+        justify-self: center
+        object-fit: contain
+    
+    .featured-repo-description
+        text-align: start
+
+    .featured-repo-main-languages-container
+        display: flex
+        gap: 0.5rem
+        align-items: center
+    
+    .featured-repo-main-languages
+        max-width: 10rem
+        padding: 0.5rem 1rem
+
+
+@media screen and (min-width: 992px)
+    .featured-repository-cards
+        max-width: 40rem
+        height: 550px
+        justify-content: center
+
+    .featured-preview-image
+        width: 100%
+        height: 100%
