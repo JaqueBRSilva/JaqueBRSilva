@@ -9,8 +9,11 @@ export default function Presentation() {
         <div className="background_layer">
             <div className="container_profile">
 
-                <div className="photo_area">
-                    <img className="github_photo" src={PHOTO_URL} alt="Foto do GitHub" />
+                <div className="photo-area-container">
+                    <img className="github-photo"
+                        src={PHOTO_URL}
+                        alt="Foto do GitHub"
+                    />
                 </div>
 
                 <div className="profile_area">

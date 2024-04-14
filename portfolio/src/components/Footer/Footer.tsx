@@ -7,7 +7,41 @@ export default function Footer() {
     return (
         <footer className='footer-content'>
             <div className="footer-columns-container">
-                <div className='footer-column-1'>
+                <div className='footer-columns'>
+                    <h3>Navegação</h3>
+
+                    <p className="footer-links">
+                        <a href="/" rel="noopener noreferrer">
+                            Home
+                        </a>
+                    </p>
+
+                    <p className="footer-links">
+                        <a href="#about" rel="noopener noreferrer">
+                            Sobre
+                        </a>
+                    </p>
+
+                    <p className="footer-links">
+                        <a href="#languages-list" rel="noopener noreferrer">
+                            Linguagens
+                        </a>
+                    </p>
+
+                    <p className="footer-links">
+                        <a href="#projects" rel="noopener noreferrer">
+                            Projetos
+                        </a>
+                    </p>
+
+                    <p className="footer-links">
+                        <a href="#contact" rel="noopener noreferrer">
+                            Contato
+                        </a>
+                    </p>
+                </div>
+
+                <div className='footer-columns'>
                     <h3>Redes Sociais</h3>
 
                     <p className="footer-links">
@@ -29,7 +63,7 @@ export default function Footer() {
                     </p>
                 </div>
 
-                <div className='footer-column-1'>
+                <div className='footer-columns'>
                     <h3>Contato</h3>
 
                     <p className="footer-links">
@@ -46,7 +80,7 @@ export default function Footer() {
                 </p>
 
                 <p className="footer-credits-text">
-                    {thisYear} ▪ {githubUser}
+                    {thisYear} © {githubUser}
                 </p>
             </div>
         </footer>

@@ -1,7 +1,8 @@
 export const BACKEND_LANGUAGES = [
     {
-        "lang_name": "Node.js",
-        "url_icon": "https://i.ibb.co/GnY7szq/node-js-logo.png"
+        id: 'B01',
+        lang_name: "Node.js",
+        url_icon: "https://i.ibb.co/GnY7szq/node-js-logo.png"
     },
 
     {
