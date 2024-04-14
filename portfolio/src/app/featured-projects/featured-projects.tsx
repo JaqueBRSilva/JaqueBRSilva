@@ -16,13 +16,9 @@ export default function FeaturedProjects() {
             <h1>Projetos</h1>
 
             <div className="featured-main-container">
-                <div className="featured-cards-list">
-
-                    <ProjectsList
-                        list={projectsList}
-                    />
-
-                </div>
+                <ProjectsList
+                    list={projectsList}
+                />
             </div>
         </>
     )

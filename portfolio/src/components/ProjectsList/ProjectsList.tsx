@@ -11,7 +11,7 @@ const ProjectsList = ({ ...props }: SelectedProjectsProps) => {
     const GITHUB_ICON = "https://img.icons8.com/material-outlined/48/16B0E4/github.png"
 
     return (
-        <>
+        <div className="featured-cards-list">
             {
                 props.list.map((proj: IFeaturedProjectsData) => (
 
@@ -68,7 +68,7 @@ const ProjectsList = ({ ...props }: SelectedProjectsProps) => {
                     </div>
                 ))
             }
-        </>
+        </div>
     )
 }
 

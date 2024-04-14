@@ -1,5 +1,9 @@
 @import ../../constants/Colors
 
+
+.featured-cards-list
+    width: 25rem
+
 .featured-repository-cards
     display: grid
     padding: 1rem
@@ -72,6 +76,10 @@
 
 
 @media screen and (min-width: 576px)
+    .featured-cards-list
+        display: grid
+        justify-content: center
+
     .featured-repository-cards
         min-width: 30rem
     
@@ -95,11 +103,13 @@
 
 
 @media screen and (min-width: 992px)
-    .featured-repository-cards
-        max-width: 40rem
-        height: 550px
-        justify-content: center
+    .featured-cards-list
+        flex: 1
+        justify-items: center
+        grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr))
+        gap: 1.5rem
 
-    .featured-preview-image
-        width: 100%
-        height: 100%
+    .featured-repository-cards
+        justify-content: center
+        width: 33rem
+        max-width: 40rem
